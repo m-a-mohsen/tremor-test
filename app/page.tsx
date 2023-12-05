@@ -14,10 +14,12 @@ import {
   Flex,
   ProgressBar
 } from "@tremor/react";
+import {Button} from '@nextui-org/button';
 
 export default function DashboardExample() {
   return (
     <main className="p-12">
+      {/* <Button>click</Button> */}
       <Title>Dashboard</Title>
       <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</Text>
 

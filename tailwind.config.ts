@@ -1,8 +1,10 @@
+const {nextui} = require("@nextui-org/react");
 /** @type {import('tailwindcss').Config} */
 
 const tremor = {
   content: [
     './node_modules/@tremor/**/*.{js,ts,jsx,tsx}', // Tremor module
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}", // Next UI
   ],
   theme: {
     transparent: "transparent",
@@ -206,6 +208,7 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-animate"),
+    nextui(),
     ...tremor.plugins,
   ],
 }
